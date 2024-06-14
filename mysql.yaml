@@ -76,7 +76,7 @@ spec:
                 configMapKeyRef:
                   name: mysql-config-map
                   key: mysql-producer-database-name
-			      - name: MYSQL_DATABASE
+            - name: MYSQL_DATABASE
               valueFrom:
                 configMapKeyRef:
                   name: mysql-config-map
@@ -91,12 +91,12 @@ spec:
                 configMapKeyRef:
                   name: mysql-config-map
                   key: mysql-producer-username
-			      - name: MYSQL_USER
+            - name: MYSQL_USER
               valueFrom:
                 configMapKeyRef:
                   name: mysql-config-map
                   key: mysql-consumer-username
-			      - name: MYSQL_PASSWORD
+            - name: MYSQL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mysql-secret
